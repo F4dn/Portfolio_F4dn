@@ -1,4 +1,5 @@
 import Fardeen from "../../Public/Images/Fardeen.jpg";
+import DoctorApp from "../../Public/Images/Tasttrove_1.png";
 
 export const Bio = {
   name: "Fardeen Qamar",
@@ -101,8 +102,8 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
     tags: ["Python", "LangChain", "ChromaDB", "REST API", "Docker", "LLM"],
     category: "ai",
-    github: "https://github.com/F4dn",
-    webapp: "https://github.com/F4dn",
+    github: "https://github.com/F4dn/chatbot",
+    webapp: "https://github.com/F4dn/chatbot",
     member: [
       {
         name: "Fardeen Qamar",
@@ -118,11 +119,11 @@ export const projects = [
     date: "2024",
     description:
       "Developed a full-stack web application for managing doctor appointments with secure authentication, REST APIs, and role-based dashboards. Implemented scalable backend services and optimized database workflows for efficient scheduling and data management.",
-    image: "https://images.unsplash.com/photo-1588776814546-ec7e5d2a5c0e",
+    image: DoctorApp,
     tags: ["React", "Node.js", "Express", "MongoDB", "REST API"],
     category: "fullstack",
-    github: "https://github.com/F4dn",
-    webapp: "https://github.com/F4dn",
+    github: "https://github.com/F4dn/Doctor-Appoint-frontend",
+    webapp: "https://app.sageturtle.in/therapist",
     member: [
       {
         name: "Fardeen Qamar",

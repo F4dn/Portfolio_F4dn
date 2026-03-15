@@ -10,7 +10,8 @@ const TYPE_COLORS: Record<string, string> = {
   Freelance:    "rgba(52,211,153,0.15)",
   "Open Source":"rgba(251,191,36,0.15)",
   Research:     "rgba(248,113,113,0.15)",
-  default: "rgba(133,76,230,0.12)"
+  default: "rgba(133,76,230,0.12)",
+  "Full-time":  "rgba(167,139,250,0.15)",
 };
 
 const TYPE_TEXT: Record<string, string> = {
@@ -18,6 +19,8 @@ const TYPE_TEXT: Record<string, string> = {
   Freelance:    "#6ee7b7",
   "Open Source":"#fcd34d",
   Research:     "#fca5a5",
+  default:      "#a78bfa",
+  "Full-time":  "#c4b5fd",
 };
 
 export default function Experience() {

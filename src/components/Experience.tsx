@@ -10,7 +10,9 @@ const TYPE_COLORS: Record<string, string> = {
   Freelance:    "rgba(52,211,153,0.15)",
   "Open Source":"rgba(251,191,36,0.15)",
   Research:     "rgba(248,113,113,0.15)",
+  default: "rgba(133,76,230,0.12)"
 };
+
 const TYPE_TEXT: Record<string, string> = {
   Internship:   "#93c5fd",
   Freelance:    "#6ee7b7",
@@ -157,8 +159,9 @@ type Experience = {
 /* ── Sub-component: single experience card ── */
 function ExpCard({ exp, index }: { exp: Experience; index: number }) {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
-  const bgColor  = TYPE_COLORS[exp.type] ?? "rgba(133,76,230,0.12)";
-  const txtColor = TYPE_TEXT[exp.type]   ?? "#a78bfa";
+  const type = exp.type ?? "default";
+  const bgColor  = TYPE_COLORS[type] ?? "rgba(133,76,230,0.12)";
+  const txtColor = TYPE_TEXT[type]   ?? "#a78bfa";
 
   return (
     <div ref={ref} className={`exp-card reveal ${isVisible ? "in" : ""}`}

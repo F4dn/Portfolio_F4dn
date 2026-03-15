@@ -3,7 +3,7 @@ import DoctorApp from "../../Public/Images/Tasttrove_1.png";
 
 export const Bio = {
   name: "Fardeen Qamar",
-  roles: ["AI Engineer", "Full Stack Developer", "React Engineer", "Problem Solver"],
+  roles: ["Software Enginner"],
   description:
     "I am a Software Engineer and AI-focused graduate student pursuing an M.Sc. in Computational Modeling and Simulation (Applied AI Track) at Technische Universität Dresden. I have experience building full-stack applications, developing AI-powered systems, and designing scalable data processing pipelines. My background includes working with technologies such as Python, React, Node.js, and machine learning frameworks to develop practical solutions ranging from web platforms to retrieval-based AI systems. I enjoy solving complex problems, building reliable software systems, and continuously learning new technologies in AI and software engineering.",
   github: "https://github.com/F4dn",

@@ -6,6 +6,9 @@ import CustomCursor from "@/components/CustomCursor";
 export const metadata: Metadata = {
   title: "Fardeen Qamar | Full Stack Developer",
   description: "Portfolio of Fardeen Qamar — Full Stack Developer & Programmer",
+  icons: {
+    icon: "/Images/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

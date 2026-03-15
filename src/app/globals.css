@@ -241,3 +241,65 @@ button { cursor: pointer; }
     transform:translate(-50%,-50%); transition:all .15s ease;
   }
 }
+
+/* ── Experience Section ────────────────────────────────────── */
+.exp-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 12px 4px 28px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+.exp-track::-webkit-scrollbar       { height: 4px; }
+.exp-track::-webkit-scrollbar-track { background: transparent; }
+.exp-track::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+.exp-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 340px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color .3s, box-shadow .3s, transform .3s;
+  cursor: default;
+}
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  opacity: 0;
+  transition: opacity .3s;
+}
+.exp-card:hover {
+  border-color: var(--border-h);
+  box-shadow: 0 0 48px var(--accent-glow);
+  transform: translateY(-6px);
+}
+.exp-card:hover::before { opacity: 1; }
+
+.exp-number {
+  position: absolute;
+  top: 20px; right: 22px;
+  font-family: var(--font-d);
+  font-size: 52px;
+  font-weight: 800;
+  color: rgba(133,76,230,0.07);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* drag cursor while scrolling */
+.exp-track.dragging { cursor: grabbing; user-select: none; }

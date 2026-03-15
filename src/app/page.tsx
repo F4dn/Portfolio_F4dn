@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Hero      from "@/components/Hero";
-import Skills    from "@/components/Skills";
+import Skills    from "@/components/Skills";   
+import Experience from "@/components/Experience";
 import Projects  from "@/components/Projects";
 import Education from "@/components/Education";
 import Footer    from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
     <>
       <Hero />
       <Skills />
+      <Experience />
       <Projects onOpen={setActiveProject} />
       <Education />
       <Footer />

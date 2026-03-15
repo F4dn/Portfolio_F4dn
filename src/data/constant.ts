@@ -175,3 +175,26 @@ export const projects = [
     ],
   },
 ];
+
+export const experience = [
+  {
+    id: 0,
+    role: "Frontend Developer Intern",
+    company: "Company Name",
+    date: "Jun 2023 – Aug 2023",
+    desc: "Built reusable React components, improved page load speed by 30%, and collaborated with the design team to ship 3 new features.",
+    skills: ["React", "TypeScript", "Tailwind CSS"],
+    logo: "https://logo-url.com/logo.png",  // or leave empty string ""
+    url: "https://company.com",
+  },
+  {
+    id: 1,
+    role: "Open Source Contributor",
+    company: "Project Name",
+    date: "Jan 2023 – Present",
+    desc: "Contributed bug fixes and documentation improvements to a popular React UI library with 10k+ GitHub stars.",
+    skills: ["React", "Git", "JavaScript"],
+    logo: "",
+    url: "https://github.com/...",
+  },
+];

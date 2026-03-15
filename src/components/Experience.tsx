@@ -139,8 +139,23 @@ export default function Experience() {
   );
 }
 
+
+type Experience = {
+  id: number
+  role: string
+  company: string
+  date: string
+  desc: string
+  skills: string[]
+  logo: string
+  url?: string
+  type?: string
+  companyUrl?: string
+  location?: string
+}
+
 /* ── Sub-component: single experience card ── */
-function ExpCard({ exp, index }: { exp: typeof experience[number]; index: number }) {
+function ExpCard({ exp, index }: { exp: Experience; index: number }) {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
   const bgColor  = TYPE_COLORS[exp.type] ?? "rgba(133,76,230,0.12)";
   const txtColor = TYPE_TEXT[exp.type]   ?? "#a78bfa";

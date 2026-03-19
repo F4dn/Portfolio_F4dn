@@ -8,7 +8,7 @@ export const Bio = {
     "I am a Software Engineer and AI-focused graduate student pursuing an M.Sc. in Computational Modeling and Simulation (Applied AI Track) at Technische Universität Dresden. I have experience building full-stack applications, developing AI-powered systems, and designing scalable data processing pipelines. My background includes working with technologies such as Python, React, Node.js, and machine learning frameworks to develop practical solutions ranging from web platforms to retrieval-based AI systems. I enjoy solving complex problems, building reliable software systems, and continuously learning new technologies in AI and software engineering.",
   github: "https://github.com/F4dn",
   resume:
-    "https://drive.google.com/file/d/19OtLEEdQ76VxqMOanci9ucKNjc4BVgbX/view?usp=drive_link",
+    "https://drive.google.com/file/d/1Yj4Shxh-5dpUzRjYl_EMvKkDAOCnIAWx/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/f4dn/",
   insta: "https://www.instagram.com/f4dn2k1/",
   email: "f4dn2k1@gmail.com",
